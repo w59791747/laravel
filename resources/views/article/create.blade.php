@@ -1,0 +1,1 @@
+<img class="vail" src="http://www.lkuangjia.com/laravel5/public/article/index">asdas
