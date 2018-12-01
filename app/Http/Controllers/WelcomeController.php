@@ -11,6 +11,8 @@ class WelcomeController extends Controller
 {
     function  index()
 	{
+		
+		
 		$country = new Article();  
 		echo $country->ceshi();
 		$test_1 = range(0,9);
@@ -36,7 +38,7 @@ class WelcomeController extends Controller
 		$country2 = $country->where('article_id','532')->update(array('title'=>'3333333','cate_id'=>'222')); 
 		$ONE = $country->where(function($q){
 			return $q->where('article_id','520')->orWhere([['from', 'article'],['article_id', '>','20']]);
-		}) 
+		})
 		->where('cate_id','112')->get()->toArray();
 		var_dump($ONE);
 		
